@@ -13,7 +13,7 @@ todoInputElement.addEventListener('keydown', function (event) {
 function renderTodoList(){
     const taskList = document.querySelector('.js-tasks-list');
 
-    taskList.innerHTML = ''; //Render işlemi yapılmadan önce liste temizlenir.
+    taskList.innerHTML = ''; 
 
     for (let i = 0; i < todoList.length; i++) {
         const todoName = todoList[i];
