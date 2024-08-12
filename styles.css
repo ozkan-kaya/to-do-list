@@ -1,0 +1,127 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-task-container, .tasks-container{
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 3px;
+    margin: 20px 20px 20px 20px ;
+}
+
+.div-header{
+    border-bottom: 2px solid rgb(221, 221, 221);
+    font-weight: 700;
+    background-color: rgb(247, 247, 247);
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.input-div{
+    display: flex;
+    margin: 10px;
+}
+
+.input-div .js-todo-name-input{
+    width: 98%;
+    height: 38px;
+    padding-left: 10px;
+    border: 1px solid rgb(221, 221, 221);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: none;
+}
+
+.input-div .add-task-button{
+    background-color: rgb(53, 121, 246);
+    font-size: 24px;
+    color: white;
+    height: 38px;
+    width: 36px;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.input-div .add-task-button:hover{
+    transition: box-shadow 0.3s;
+    box-shadow: 0 0 10px rgb(53, 121, 246);
+}
+
+.input-div .add-task-button:active{
+    opacity: 0.6;
+}
+
+.tasks-container{
+    background-color: rgb(247, 247, 247);
+    border-bottom: none;
+}
+
+.tasks-container .div-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.tasks-container .js-clear-button{
+    height: 28px;
+    font-size: 14px;
+    color: red;
+    border: 1px solid red;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-weight: 400;
+    opacity: 0.7;
+    transition: opacity 0.15s;
+}
+
+.tasks-container .js-clear-button:hover{
+    transition: 0.15s;
+    box-shadow: 0 0 5px red;
+    opacity: 1;
+}
+
+.tasks-container .js-clear-button:active{
+    opacity: 0.4;
+}
+
+.tasks-container .js-tasks-list .task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.tasks-container .js-tasks-list .task:last-of-type{
+    border-bottom: 2px solid rgb(221, 221, 221);
+}
+
+.js-tasks-list button{
+    font-size: 18px;
+    font-weight: 700;
+    background-color: transparent;
+    color: rgb(128, 128, 128);
+    height: 30px;
+    width: 2.8%;
+    border: none;
+    transition: color 0.3s;
+}
+
+.js-tasks-list button:hover{
+    transition: color 0.3s;
+    color: red;
+}
+
+.js-tasks-list button:active{
+    opacity: 0.4;
+}

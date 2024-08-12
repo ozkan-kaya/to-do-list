@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Yapılacaklar Listesi</h1>
+
+    <div class="add-task-container">
+        <div class="div-header">
+            <p class="header">Yeni Görev</p>
+        </div>
+
+        <div class="input-div">
+            <input type="text" class="js-todo-name-input" placeholder="Yeni görev girin">
+            <button onclick="addTodo()" class="add-task-button">+</button>
+        </div>
+    </div>
+
+    <div class="tasks-container">
+        <div class="div-header">
+            <p class="header">Görev Listesi</p>
+            <button onclick="clearAll()" class="js-clear-button">Temizle</button>
+        </div>
+
+        <div class="js-tasks-list">
+            <!-- JS aracılığıyla oluşturulacak görevler burada listelenecek -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
